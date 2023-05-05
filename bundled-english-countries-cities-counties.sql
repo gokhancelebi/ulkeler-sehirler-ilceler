@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `cities`
 --
 
-CREATE TABLE `cities` (
+CREATE TABLE IF NOT EXIS `cities` (
   `id` int NOT NULL,
   `name` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `country_id` int DEFAULT NULL
@@ -4164,7 +4164,7 @@ INSERT INTO `cities` (`id`, `name`, `country_id`) VALUES
 -- Table structure for table `counties`
 --
 
-CREATE TABLE `counties` (
+CREATE TABLE IF NOT EXIS  `counties` (
   `id` int NOT NULL,
   `name` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `city_id` int NOT NULL
@@ -52610,7 +52610,7 @@ INSERT INTO `counties` (`id`, `name`, `city_id`) VALUES
 -- Table structure for table `countries`
 --
 
-CREATE TABLE `countries` (
+CREATE TABLE IF NOT EXIS  `countries` (
   `id` int NOT NULL,
   `rewrite` varchar(150) NOT NULL,
   `name` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
